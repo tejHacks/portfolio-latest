@@ -1,36 +1,39 @@
-import React from 'react';
-import { ExternalLink, Github, Brain, Stethoscope, Mic, Code, Palette, Timer, Calculator, Gamepad2, Lock, Book, Database, Terminal, Globe } from 'lucide-react';
+import { ExternalLink, Github, Brain, Stethoscope, Mic, Code, Palette, Timer, Calculator, Lock, Globe } from 'lucide-react';
 
 const Projects = () => {
-  const mlProjects = [
-    {
-      title: "Neonatal Jaundice Prediction",
-      description: "Machine learning model to predict neonatal jaundice in newborns using clinical data. Built with Python, scikit-learn, and medical datasets to assist healthcare professionals in early diagnosis.",
-      techStack: ["Python", "scikit-learn", "Pandas", "NumPy", "Matplotlib"],
-      icon: <Brain className="w-8 h-8" />,
-      category: "Medical AI",
-      github: "https://github.com/tejHacks/neonatal-jaundice-prediction",
-      color: "emerald"
-    },
-    {
-      title: "Breast Cancer Detection via Ultrasound",
-      description: "Deep learning model using ultrasound images to detect breast cancer. Implemented with TensorFlow and OpenCV for image preprocessing and classification with high accuracy.",
-      techStack: ["Python", "TensorFlow", "OpenCV", "Keras", "NumPy"],
-      icon: <Stethoscope className="w-8 h-8" />,
-      category: "Medical Imaging",
-      github: "https://github.com/tejHacks/breast-cancer-ultrasound",
-      color: "pink"
-    },
-    {
-      title: "Speaker Diarization System",
-      description: "Audio processing system that identifies and separates different speakers in audio recordings. Uses advanced signal processing and machine learning for speaker identification.",
-      techStack: ["Python", "librosa", "PyTorch", "scipy", "sklearn"],
-      icon: <Mic className="w-8 h-8" />,
-      category: "Audio AI",
-      github: "https://github.com/tejHacks/speaker-diarization",
-      color: "purple"
-    }
-  ];
+ const mlProjects = [
+  {
+    title: "Neonatal Jaundice Prediction",
+    description: "Machine learning model deployed as a web app for early jaundice diagnosis. Built with Python and scikit-learn, hosted on Netlify for clinical accessibility.",
+    techStack: ["Python", "scikit-learn", "Streamlit", "Pandas", "NumPy"],
+    icon: <Brain className="w-8 h-8" />,
+    category: "Medical AI",
+    liveDemo: "https://luimcare-ai.netlify.app",
+    github: "https://github.com/tejHacks/neonatal-jaundice-prediction",
+    color: "emerald"
+  },
+  {
+    title: "Breast Cancer Detection via Ultrasound",
+    description: "Deep learning model using ultrasound images for breast cancer detection. Deployed with Streamlit (not currently live).",
+    techStack: ["Python", "TensorFlow", "OpenCV", "Keras", "NumPy"],
+    icon: <Stethoscope className="w-8 h-8" />,
+    category: "Medical Imaging",
+    liveDemo: null,
+    github: "https://github.com/tejHacks/breast-cancer-ultrasound",
+    color: "pink"
+  },
+  {
+    title: "Speaker Diarization System",
+    description: "Streamlit-based audio processing system to identify and separate different speakers in conversations. Combines PyTorch and audio signal processing.",
+    techStack: ["Python", "Streamlit", "librosa", "PyTorch", "scipy", "sklearn"],
+    icon: <Mic className="w-8 h-8" />,
+    category: "Audio AI",
+    liveDemo: null,
+    github: "https://github.com/tejHacks/speaker-diarization",
+    color: "purple"
+  }
+];
+
 
   const webProjects = [
     {
@@ -154,7 +157,24 @@ const Projects = () => {
                   >
                     <Github className="w-4 h-4" />
                     <span>Code</span>
-                  </a>
+                  </a>  
+                  {project.liveDemo ? (
+  <a
+    href={project.liveDemo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center space-x-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
+  >
+    <ExternalLink className="w-4 h-4" />
+    <span>Live Demo</span>
+  </a>
+) : (
+  <div className="flex items-center space-x-2 px-4 py-2 bg-slate-700 text-white rounded-lg opacity-60 cursor-not-allowed">
+    <ExternalLink className="w-4 h-4" />
+    <span>Live Link Not Available</span>
+  </div>
+)}
+
                 </div>
               </div>
             ))}
