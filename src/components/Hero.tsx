@@ -31,7 +31,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Computer Science Student | Backend Engineer | Code & Purpose
+            Computer Scientist | Backend Engineer | Code & Purpose
           </p>
           
           <p className="text-lg text-slate-400 max-w-2xl mx-auto">

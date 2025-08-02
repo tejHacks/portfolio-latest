@@ -24,7 +24,7 @@ const About = () => {
               
               <div className="space-y-4 text-slate-300 leading-relaxed">
                 <p>
-                  <strong className="text-emerald-400">Hey, I'm Olateju Olamide Emmanuel.</strong> I'm a backend-focused Computer Science student with a passion for clean architecture, strong logic, and building scalable systems that solve real-world problems.
+                  <strong className="text-emerald-400">Hey, I'm Olateju Olamide Emmanuel.</strong> I'm a backend-focused Computer Scientist with a passion for clean architecture, strong logic, and building scalable systems that solve real-world problems.
                 </p>
                 
                 <p>
