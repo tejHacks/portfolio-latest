@@ -12,6 +12,11 @@ import {
   BookOpen,
   Coffee
 } from 'lucide-react';
+import { FaPhp,FaCode,FaLaravel,FaDragon,FaWindows, FaNode, FaReact, FaPython, FaDocker, FaGitAlt, FaLinux, FaDatabase, FaShieldAlt, FaNetworkWired, FaBrain, FaRobot, FaEye, FaVial } from 'react-icons/fa';
+import { SiMysql,SiFedora, SiPostgresql, SiSqlite, SiMariadb, SiKaliLinux, SiParrotsecurity, SiTensorflow, SiOpencv, SiTailwindcss, SiJavascript, SiHtml5, SiVuedotjs, SiVisualstudiocode, SiPostman } from 'react-icons/si';
+import { DiMongodb, DiPostgresql } from 'react-icons/di';
+// import { FaVisualStudio } from 'react-icons/fa';
+
 
 const Skills = () => {
   const skillCategories = [
@@ -20,23 +25,24 @@ const Skills = () => {
       icon: <Server className="w-6 h-6" />,
       color: "emerald",
       skills: [
-        { name: "PHP", level: 90, icon: "🐘" },
-        { name: "Laravel", level: 85, icon: "🎨" },
-        { name: "Node.js", level: 75, icon: "🟢" },
-        { name: "Python", level: 70, icon: "🐍" },
-        { name: "REST APIs", level: 85, icon: "🔗" }
+        { name: "PHP", level: 90, icon: <FaPhp className="text-purple-400" /> },
+        { name: "Laravel", level: 85, icon: <FaLaravel className="text-red-400" /> },
+        { name: "Node.js", level: 75, icon: <FaNode className="text-green-400" /> },
+        { name: "Python", level: 70, icon: <FaPython className="text-yellow-400" /> },
+        { name: "REST APIs", level: 85, icon: <FaNetworkWired className="text-sky-400" /> }
+      
       ]
     },
     {
       title: "Frontend Development",
       icon: <Monitor className="w-6 h-6" />,
       color: "blue",
-      skills: [
-        { name: "Vue.js", level: 80, icon: "💚" },
-        { name: "React", level: 75, icon: "⚛️" },
-        { name: "JavaScript", level: 85, icon: "💛" },
-        { name: "Tailwind CSS", level: 90, icon: "🌊" },
-        { name: "HTML/CSS", level: 90, icon: "🎨" }
+     skills: [
+        { name: "Vue.js", level: 80, icon: <SiVuedotjs className="text-green-400" /> },
+        { name: "React", level: 75, icon: <FaReact className="text-cyan-400" /> },
+        { name: "JavaScript", level: 85, icon: <SiJavascript className="text-yellow-400" /> },
+        { name: "Tailwind CSS", level: 90, icon: <SiTailwindcss className="text-teal-400" /> },
+        { name: "HTML/CSS", level: 90, icon: <SiHtml5 className="text-orange-400" /> }
       ]
     },
     {
@@ -44,22 +50,25 @@ const Skills = () => {
       icon: <Database className="w-6 h-6" />,
       color: "purple",
       skills: [
-        { name: "MySQL", level: 85, icon: "🐬" },
-        { name: "PostgreSQL", level: 75, icon: "🐘" },
-        { name: "SQLite", level: 80, icon: "💎" },
-        { name: "MariaDB", level: 75, icon: "🦭" }
+      { name: "MySQL", level: 85, icon: <SiMysql className="text-blue-400" /> },
+        { name: "PostgreSQL", level: 75, icon: <SiPostgresql className="text-indigo-400" /> },
+        { name: "SQLite", level: 80, icon: <SiSqlite className="text-purple-300" /> },
+        { name: "MariaDB", level: 75, icon: <SiMariadb className="text-blue-300" /> }
       ]
     },
     {
       title: "DevOps & Tools",
       icon: <Cpu className="w-6 h-6" />,
       color: "amber",
-      skills: [
-        { name: "Docker", level: 70, icon: "🐳" },
-        { name: "Git", level: 85, icon: "🌿" },
-        { name: "Linux", level: 80, icon: "🐧" },
-        { name: "VS Code", level: 95, icon: "💙" },
-        { name: "Postman", level: 85, icon: "📮" }
+     skills: [
+        { name: "Docker", level: 70, icon: <FaDocker className="text-blue-400" /> },
+        { name: "Git", level: 90, icon: <FaGitAlt className="text-orange-500" /> },
+        { name: "Linux", level: 90, icon: <FaLinux className="text-white" /> },
+        { name: "VS Code", level: 95, icon: <FaCode className="text-blue-500" /> },
+        // { name: "VS Code", level: 95, icon: <FaVisualStudio className="text-blue-500" /> },
+        { name: "Postman", level: 85, icon: <SiPostman className="text-orange-300" /> },
+        { name: "Fedora", level: 85, icon: <SiFedora className="text-blue-400" /> },
+        { name: "Windows", level: 90, icon: <FaWindows className="text-blue-300" /> }
       ]
     },
     {
@@ -67,10 +76,11 @@ const Skills = () => {
       icon: <Shield className="w-6 h-6" />,
       color: "red",
       skills: [
-        { name: "Kali Linux", level: 65, icon: "🛡️" },
-        { name: "Parrot OS", level: 60, icon: "🦜" },
-        { name: "Network Security", level: 55, icon: "🔒" },
-        { name: "System Admin", level: 70, icon: "⚙️" }
+        { name: "Kali Linux", level: 83, icon: <FaDragon className="text-red-500" /> },
+        { name: "Parrot OS", level: 70, icon: <SiParrotsecurity className="text-green-300" /> },
+        { name: "Network Security", level: 70, icon: <FaShieldAlt className="text-rose-400" /> },
+        { name: "System Admin", level: 70, icon: <Terminal className="text-white" /> }
+ 
       ]
     },
     {
@@ -78,10 +88,10 @@ const Skills = () => {
       icon: <BookOpen className="w-6 h-6" />,
       color: "pink",
       skills: [
-        { name: "Python ML", level: 65, icon: "🧠" },
-        { name: "TensorFlow", level: 60, icon: "🤖" },
-        { name: "Data Analysis", level: 70, icon: "📊" },
-        { name: "OpenCV", level: 55, icon: "👁️" }
+       { name: "Python ML", level: 65, icon: <FaBrain className="text-pink-400" /> },
+        { name: "TensorFlow", level: 65, icon: <SiTensorflow className="text-orange-400" /> },
+        { name: "Data Analysis", level: 50, icon: <FaVial className="text-fuchsia-400" /> },
+        { name: "OpenCV", level: 55, icon: <SiOpencv className="text-slate-300" /> }
       ]
     }
   ];
