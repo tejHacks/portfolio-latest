@@ -140,28 +140,13 @@ const Skills = () => {
 
               {/* Skills List */}
               <div className="space-y-4">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skill.name} className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center space-x-2">
-                        <span className="text-lg">{skill.icon}</span>
-                        <span className="text-slate-300 font-medium">{skill.name}</span>
-                      </div>
-                      <span className="text-emerald-400 text-sm font-bold">{skill.level}%</span>
-                    </div>
-                    
-                    {/* Progress Bar */}
-                    <div className="w-full bg-slate-700 rounded-full h-2">
-                      <div
-                        className={`h-2 rounded-full bg-gradient-to-r ${getColorClasses(category.color)} transition-all duration-1000 ease-out`}
-                        style={{
-                          width: `${skill.level}%`,
-                          animationDelay: `${(categoryIndex * 100) + (skillIndex * 50)}ms`
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))}
+               {category.skills.map((skill) => (
+  <div key={skill.name} className="flex items-center space-x-3">
+    <span className="text-xl">{skill.icon}</span>
+    <span className="text-slate-300 font-medium text-lg">{skill.name}</span>
+  </div>
+))}
+
               </div>
             </div>
           ))}
