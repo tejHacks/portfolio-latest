@@ -8,7 +8,7 @@ const Projects = () => {
     techStack: ["Python", "scikit-learn", "Streamlit", "Pandas", "NumPy"],
     icon: <Brain className="w-8 h-8" />,
     category: "Medical AI",
-    liveDemo: "https://luimcare-ai.netlify.app",
+    liveDemo: "https://lumicare-ai.netlify.app",
     github: "https://github.com/tejHacks/neonatal-jaundice-prediction",
     color: "emerald"
   },
