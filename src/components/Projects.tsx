@@ -5,7 +5,7 @@ const Projects = () => {
   {
     title: "Neonatal Jaundice Prediction",
     description: "Machine learning model deployed as a web app for early jaundice diagnosis. Built with Python and scikit-learn, hosted on Netlify for clinical accessibility.",
-    techStack: ["Python", "scikit-learn", "Streamlit", "Pandas", "NumPy"],
+    techStack: ["Python","TypeScript", "React","Node.js", "MySQL", "scikit-learn","Pandas", "NumPy",],
     icon: <Brain className="w-8 h-8" />,
     category: "Medical AI",
     liveDemo: "https://lumicare-ai.netlify.app",
@@ -15,7 +15,7 @@ const Projects = () => {
   {
     title: "Breast Cancer Detection via Ultrasound",
     description: "Deep learning model using ultrasound images for breast cancer detection. Deployed with Streamlit (not currently live).",
-    techStack: ["Python", "TensorFlow", "OpenCV", "Keras", "NumPy"],
+    techStack: ["Python", "TensorFlow", "OpenCV","Streamlit", "Keras", "NumPy"],
     icon: <Stethoscope className="w-8 h-8" />,
     category: "Medical Imaging",
     liveDemo: null,

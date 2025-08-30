@@ -6,8 +6,7 @@ const Hero = () => {
    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
   <div className="space-y-8 animate-fade-in">
     {/* Animated Icons */}
-// eslint-disable-next-line no-irregular-whitespace
-    <div className="flex justify-center space-x-6 mb-8">
+      <div className="flex justify-center space-x-6 mb-8">
    <div className="animate-bounce delay-100">
      <Code className="w-8 h-8 text-emerald-400" />
    </div>

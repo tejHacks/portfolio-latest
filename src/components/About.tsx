@@ -30,7 +30,6 @@ const About = () => {
                 <p>
                   My expertise lies in backend development, from designing robust APIs and structuring databases to writing maintainable, high-performance code. My core stack includes <strong className="text-amber-400">PHP, Laravel, MySQL, and Python</strong>. I am also skilled in <strong className="text-blue-400">Vue.js, React, Node.js</strong>, and <strong className="text-green-400">Linux environments</strong>.
                 </p>
-                
                 <p>
                   I think in systems, not just syntax. Performance and reliability are my primary drivers. I get excited about tools that make development smarter, from deploying with <strong className="text-purple-400">Docker</strong> and versioning with <strong className="text-orange-400">Git</strong> to automating workflows.
                 </p>
