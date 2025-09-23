@@ -1,5 +1,5 @@
 import {  FaLaughWink, } from 'react-icons/fa';
-import { ExternalLink,ComputerIcon, Github,SpeakerIcon, Brain, Stethoscope, Mic, Code, Palette, Timer, Calculator, Lock, Globe } from 'lucide-react';
+import { ExternalLink,ComputerIcon, Github,SpeakerIcon,Smartphone, Brain, Stethoscope, Mic, Code, Palette, Timer, Calculator, Lock, Globe } from 'lucide-react';
 
 import Image1 from '../assets/mark-dart.jpg';
 import Image2 from '../assets/palindrome.png';
@@ -25,6 +25,7 @@ import Image19 from '../assets/sniphub.png';  // For SnipHub
 import Image20 from '../assets/color-pallete.png';  // For Color Palette Generator
 import Image21 from '../assets/nmap.png';  // For Nmap Commands Keeper
 import Image22 from '../assets/bible-game.jpg';  // For Nmap Commands Keeper
+import Image23 from '../assets/mobile-app.jpeg';  // For Nmap Commands Keeper
 
 
 const Projects = () => {
@@ -90,6 +91,15 @@ const Projects = () => {
       liveDemo: "https://lumicare-ai.netlify.app/",
       github: "https://github.com/tejHacks/jaundice-model-backend",
       icon: <ComputerIcon className="w-6 h-6" />
+    },
+    {
+      title: "Linux Commands App",
+      description: "My first mobile app—built with React Native to browse Linux commands with lazy loading, designed for developers learning CLI on Android.",
+      techStack: ["React Native", "JavaScript", "Expo"],
+      image: Image23,
+      liveDemo: null, // Could add Play Store link if published
+      github: "https://github.com/tejHacks/linux-commands-mobile-app", // Update with actual repo if exists
+      icon: <Smartphone className="w-6 h-6" />
     },
     {
       title: "RizzMe",
