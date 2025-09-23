@@ -250,60 +250,62 @@ const Projects = () => {
         </div>
 
         {/* Web Projects Section */}
-        <div>
-  <h3 className="text-3xl font-bold text-white mb-8 flex items-center">
+  {/* Web Projects Section */}
+<div>
+  <h3 className="text-3xl font-bold text-white mb-12 flex items-center justify-center">
     <Globe className="w-8 h-8 text-blue-400 mr-4" />
     Web Development Projects
   </h3>
 
-  <div className="space-y-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
     {webProjects.map((project) => (
       <div
         key={project.title}
-        className="bg-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden hover:border-slate-600/50 transition-all duration-300 transform hover:scale-[1.02] flex flex-col lg:flex-row"
+        className="bg-slate-900/70 backdrop-blur-md rounded-xl border border-slate-700/50 overflow-hidden hover:border-blue-500/50 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg flex flex-col"
       >
         {/* Image Section */}
-        <div className="lg:w-1/2">
-                  <div className="aspect-video lg:aspect-square bg-slate-700 relative overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                    />   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
-          </div>
+        <div className="relative w-full h-48 sm:h-64 md:h-56 overflow-hidden">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            loading="lazy"
+            onError={(e) => (e.currentTarget.src = '/assets/fallback.jpg')} // Fallback image
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent" />
         </div>
 
         {/* Content Section */}
-        <div className="w-full lg:w-1/2 p-4 sm:p-6 lg:p-8 flex flex-col justify-center">
-          <div className="flex items-center space-x-3 mb-4">
-            <div className="p-2 bg-emerald-600/20 rounded-lg text-emerald-400">
+        <div className="p-5 flex flex-col flex-grow">
+          <div className="flex items-center space-x-3 mb-3">
+            <div className="p-2 bg-blue-600/20 rounded-lg text-blue-400">
               {project.icon}
             </div>
-            <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">{project.title}</h4>
+            <h4 className="text-lg sm:text-xl font-bold text-white">{project.title}</h4>
           </div>
 
-          <p className="text-slate-300 mb-6 leading-relaxed text-base sm:text-lg">
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-4 flex-grow">
             {project.description}
           </p>
 
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-2 mb-4">
             {project.techStack.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm"
+                className="px-2 py-1 bg-slate-700/50 text-slate-300 rounded-full text-xs sm:text-sm"
               >
                 {tech}
               </span>
             ))}
           </div>
 
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap gap-3">
             {project.liveDemo && (
               <a
                 href={project.liveDemo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg transition-colors transform hover:scale-105"
+                className="flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors transform hover:scale-105 text-sm"
               >
                 <ExternalLink className="w-4 h-4" />
                 <span>Live Demo</span>
@@ -313,7 +315,7 @@ const Projects = () => {
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors transform hover:scale-105"
+              className="flex items-center space-x-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors transform hover:scale-105 text-sm"
             >
               <Github className="w-4 h-4" />
               <span>View Code</span>
