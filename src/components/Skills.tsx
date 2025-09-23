@@ -1,20 +1,16 @@
-import React from 'react';
 import { 
   Code, 
   Database, 
   Server, 
-  GitBranch, 
   Terminal, 
-  Layers,
   Monitor,
   Cpu,
   Shield,
   BookOpen,
   Coffee
 } from 'lucide-react';
-import { FaPhp,FaCode,FaLaravel,FaDragon,FaWindows, FaNode, FaReact, FaPython, FaDocker, FaGitAlt, FaLinux, FaDatabase, FaShieldAlt, FaNetworkWired, FaBrain, FaRobot, FaEye, FaVial } from 'react-icons/fa';
-import { SiMysql,SiFedora, SiPostgresql, SiSqlite, SiMariadb, SiKaliLinux, SiParrotsecurity, SiTensorflow, SiOpencv, SiTailwindcss, SiJavascript, SiHtml5, SiVuedotjs, SiVisualstudiocode, SiPostman } from 'react-icons/si';
-import { DiMongodb, DiPostgresql } from 'react-icons/di';
+import { FaPhp,FaCode,FaLaravel,FaDragon,FaWindows, FaNode, FaReact, FaPython, FaDocker, FaGitAlt, FaLinux, FaShieldAlt, FaNetworkWired, FaBrain, FaVial } from 'react-icons/fa';
+import { SiMysql,SiMongodb,SiFedora, SiPostgresql, SiSqlite, SiMariadb, SiParrotsecurity, SiTensorflow, SiOpencv, SiTailwindcss, SiJavascript, SiHtml5, SiVuedotjs, SiPostman } from 'react-icons/si';
 // import { FaVisualStudio } from 'react-icons/fa';
 
 
@@ -53,7 +49,8 @@ const Skills = () => {
       { name: "MySQL", level: 85, icon: <SiMysql className="text-blue-400" /> },
         { name: "PostgreSQL", level: 75, icon: <SiPostgresql className="text-indigo-400" /> },
         { name: "SQLite", level: 80, icon: <SiSqlite className="text-purple-300" /> },
-        { name: "MariaDB", level: 75, icon: <SiMariadb className="text-blue-300" /> }
+        { name: "MariaDB", level: 75, icon: <SiMariadb className="text-blue-300" /> },
+        {name: "MongoDB", level: 75, icon: <SiMongodb className="text-blue-300" />}
       ]
     },
     {

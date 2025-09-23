@@ -1,46 +1,105 @@
-import { ExternalLink, Github, Brain, Stethoscope, Mic, Code, Palette, Timer, Calculator, Lock, Globe } from 'lucide-react';
+import {  FaLaughWink, } from 'react-icons/fa';
+import { ExternalLink,ComputerIcon, Github,SpeakerIcon, Brain, Stethoscope, Mic, Code, Palette, Timer, Calculator, Lock, Globe } from 'lucide-react';
+
+import Image1 from '../assets/mark-dart.jpg';
+import Image2 from '../assets/palindrome.png';
+import Image4 from '../assets/mass-converter.png'
+import Image3 from '../assets/pomo-chrono.png';
+import Image5 from '../assets/web-paint.png';
+import Image6 from '../assets/password-maanger.png';
+import Image7 from '../assets/spanish.png';
+import Image8 from '../assets/rizz.jpg';
+import Image9 from '../assets/plants-keeper.png';
+import Image10 from '../assets/cpp-camp-1.jpg';
+import Image11 from '../assets/lumicare.png';
+import Image12 from '../assets/mamacare.jpg';
 
 const Projects = () => {
- const mlProjects = [
-  {
-    title: "Neonatal Jaundice Prediction",
-    description: "Machine learning model deployed as a web app for early jaundice diagnosis. Built with Python and scikit-learn, hosted on Netlify for clinical accessibility.",
-    techStack: ["Python","TypeScript", "React","Node.js", "MySQL", "scikit-learn","Pandas", "NumPy",],
-    icon: <Brain className="w-8 h-8" />,
-    category: "Medical AI",
-    liveDemo: "https://lumicare-ai.netlify.app",
-    github: "https://github.com/tejHacks/neonatal-jaundice-prediction",
-    color: "emerald"
-  },
-  {
-    title: "Breast Cancer Detection via Ultrasound",
-    description: "Deep learning model using ultrasound images for breast cancer detection. Deployed with Streamlit (not currently live).",
-    techStack: ["Python", "TensorFlow", "OpenCV","Streamlit", "Keras", "NumPy"],
-    icon: <Stethoscope className="w-8 h-8" />,
-    category: "Medical Imaging",
-    liveDemo: null,
-    github: "https://github.com/tejHacks/breast-cancer-ultrasound",
-    color: "pink"
-  },
-  {
-    title: "Speaker Diarization System",
-    description: "Streamlit-based audio processing system to identify and separate different speakers in conversations. Combines PyTorch and audio signal processing.",
-    techStack: ["Python", "Streamlit", "librosa", "PyTorch", "scipy", "sklearn"],
-    icon: <Mic className="w-8 h-8" />,
-    category: "Audio AI",
-    liveDemo: null,
-    github: "https://github.com/tejHacks/speaker-diarization",
-    color: "purple"
-  }
-];
+  const mlProjects = [
+    {
+      title: "Neonatal Jaundice Prediction",
+      description: "Machine learning model deployed as a web app for early jaundice diagnosis. Built with Python and scikit-learn, hosted on Netlify for clinical accessibility.",
+      techStack: ["Python", "TypeScript", "React", "Node.js", "MySQL", "scikit-learn", "Pandas", "NumPy",],
+      icon: <Brain className="w-8 h-8" />,
+      category: "Medical AI",
+      liveDemo: "https://lumicare-ai.netlify.app",
+      github: "https://github.com/tejHacks/neonatal-jaundice-prediction",
+      color: "emerald"
+    },
+    {
+      title: "Breast Cancer Detection via Ultrasound",
+      description: "Aim: Deep learning model using ultrasound images for breast cancer detection.Developed for Final Year Research Project before undergoing the Speaker Dirizaition Model Development.",
+      techStack: ["Python", "TensorFlow", "OpenCV", "Streamlit", "Keras", "NumPy"],
+      icon: <Stethoscope className="w-8 h-8" />,
+      category: "Medical Imaging",
+      liveDemo: null,
+      github: "https://github.com/tejHacks/breast-cancer-ultrasound",
+      color: "pink"
+    },
+    {
+      title: "Speaker Diarization System",
+      description: "Streamlit-based audio processing system to identify and separate different speakers in conversations. Combines PyTorch and audio signal processing.",
+      techStack: ["Python", "Streamlit", "librosa", "PyTorch", "scipy", "sklearn"],
+      icon: <Mic className="w-8 h-8" />,
+      category: "Audio AI",
+      liveDemo: null,
+      github: "https://github.com/tejHacks/speaker-diarization",
+      color: "purple"
+    }
+  ];
 
 
   const webProjects = [
+      {
+      title: "CppCamp",
+      description: "A multi functional next-gen platform for mastering C++ with hands-on practice, smart tools, AI based mentor and learning resources plus straightfroward curriculum and simplified approach to learning plus fully functional web based code editor",
+      techStack: ["JavaScript", "React", "TypeScript", "Local Storage", "Framer Motion", "Lucide React"],
+      image: Image10,
+      liveDemo: "https://cpp-camp.vercel.app/",
+      github: " https://github.com/tejHacks/cppCamp",
+      icon: <ComputerIcon className="w-6 h-6" />
+    },
+     {
+      title: "Lumicare AI",
+      description: "A multi functional web app designed to detect jaundice in babies using a custom-built Computer Vision based model. I and 2 of my colleagues built this model for the HelpMum carecode Hackathon and our models accuracy was over 96% after training and fine-tuning,I handled the models deployment and designed the frontend and backend of the entire web application architecture.",
+      techStack: ["JavaScript", "React", "TypeScript", "Local Storage","Node.js", "MYSQL","Fast API", "SwaggerUI","Tensorflow", "OpenCV", "Framer Motion", "Lucide React","Python","Sklearn", "Flask"],
+      image: Image11,
+      liveDemo: "https://lumicare-ai.netlify.app/",
+      github: "https://github.com/tejHacks/jaundice-model-backend",
+      icon: <ComputerIcon className="w-6 h-6" />
+    },
+      {
+      title: "MamaCare ",
+      description: "A multi functional web application designed to help pregnant mothers in the pregnancy stage with multiple features tailored towards aiding them(Pregnancy, tracker,",
+      techStack: ["JavaScript", "React", "TypeScript", "Local Storage","Node.js", "MYSQL","Fast API", "SwaggerUI","Tensorflow", "OpenCV", "Framer Motion", "Lucide React","Python","Sklearn", "Flask"],
+      image: Image12,
+      liveDemo: "https://lumicare-ai.netlify.app/",
+      github: "https://github.com/tejHacks/jaundice-model-backend",
+      icon: <ComputerIcon className="w-6 h-6" />
+    },
+    {
+      title: "RizzMe",
+      description: "A sleezy line generator for ri**ing your opposite gender",
+      techStack: ["JavaScript", "React", "TypeScript", "Local Storage", "Framer Motion", "Lucide React"],
+      image: Image8,
+      liveDemo: "https://rizz-generator.vercel.app/",
+      github: " https://github.com/tejHacks/rizz-generator/",
+      icon: <FaLaughWink className="w-6 h-6" />
+    },
+    {
+      title: "MarkDart",
+      description: "A sleek web based Markdown editor",
+      techStack: ["JavaScript", "React", "NextJS", "TypeScript", "Local Storage", "Next Themes"],
+      image: Image1,
+      liveDemo: "https://markdart-editor.vercel.app/",
+      github: "https://github.com/tejHacks/markDartv1/",
+      icon: <Code className="w-6 h-6" />
+    },
     {
       title: "Palindrome Checker",
       description: "A sleek web application that checks if words or phrases are palindromes. Features real-time validation, case-insensitive checking, and handles spaces and punctuation gracefully. Built with clean JavaScript and responsive design.",
       techStack: ["JavaScript", "HTML5", "CSS3", "Bootstrap"],
-      image: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+      image: Image2,
       liveDemo: "https://palindrome-checker-plum-sigma.vercel.app/",
       github: "https://github.com/tejHacks/palindrome-checker",
       icon: <Code className="w-6 h-6" />
@@ -49,7 +108,7 @@ const Projects = () => {
       title: "Web Paint App",
       description: "Digital canvas application with multiple brush tools, color palette, layers support, and save functionality. Implements HTML5 Canvas API with smooth drawing experience and undo/redo capabilities for creative expression.",
       techStack: ["JavaScript", "HTML5 Canvas", "CSS3", "Local Storage"],
-      image: "https://images.pexels.com/photos/1988681/pexels-photo-1988681.jpeg",
+      image: Image5,
       liveDemo: "https://web-paint-delta.vercel.app/",
       github: "https://github.com/tejHacks/web-paint-app",
       icon: <Palette className="w-6 h-6" />
@@ -58,7 +117,7 @@ const Projects = () => {
       title: "Pomo Chrono",
       description: "Productivity-focused Pomodoro timer with customizable work/break intervals, progress tracking, and ambient sounds. Features session statistics, daily goals, and notification system to boost focus and productivity.",
       techStack: ["JavaScript", "Web Audio API", "CSS3", "Progressive Web App"],
-      image: "https://images.pexels.com/photos/1059120/pexels-photo-1059120.jpeg",
+      image: Image3,
       liveDemo: "https://pomo-chrono.vercel.app/",
       github: "https://github.com/tejHacks/pomo-chrono",
       icon: <Timer className="w-6 h-6" />
@@ -67,26 +126,34 @@ const Projects = () => {
       title: "Mass Converter",
       description: "Comprehensive unit conversion tool supporting multiple mass units from grams to tons. Features instant conversion, precise calculations, scientific notation support, and educational information about different measurement systems.",
       techStack: ["JavaScript", "CSS3", "HTML5", "Math.js"],
-      image: "https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg",
+      image: Image4,
       liveDemo: "https://mass-converter-eight.vercel.app/",
       github: "https://github.com/tejHacks/mass-converter",
       icon: <Calculator className="w-6 h-6" />
     },
     {
-      title: "Vue Todo App",
-      description: "Modern task management application built with Vue 3 Composition API. Features drag-and-drop reordering, categories, due dates, priority levels, and local storage persistence for seamless task organization.",
+      title: "Learn Spanish",
+      description: "Learn Spanish with this simple app built with Vue and Vite.. Features text to Speech via Web based SpeechUtterance API in JavaScript and Composition API In Vue.",
       techStack: ["Vue.js 3", "Composition API", "Tailwind CSS", "Vite"],
-      image: "https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg",
-      liveDemo: "https://vue-todo-app-orpin-rho.vercel.app",
-      github: "https://github.com/tejHacks/vue-todo-app",
-      icon: <Code className="w-6 h-6" />
+      image: Image7,
+      liveDemo: "https://spanish-words-pi.vercel.app/",
+      github: "https://github.com/tejHacks/spanish-words",
+      icon: <SpeakerIcon className="w-6 h-6" />
     },
     {
-      title: "Password Manager",
+      title: "Password Monkey",
       description: "Secure password management system with encryption, password generation, and organized storage. Built with PHP and MySQL, featuring strong encryption algorithms and user authentication for protecting sensitive credentials.",
       techStack: ["PHP", "MySQL", "Bootstrap", "AES Encryption", "Apache"],
-      image: "https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg",
+      image: Image6,
       github: "https://github.com/tejHacks/password-keeper-php",
+      icon: <Lock className="w-6 h-6" />
+    },
+    {
+      title: "Plants Keeper",
+      description: "Track and manage your plant collection with a PHP & MySQL database.",
+      techStack: ["PHP", "MySQL", "Bootstrap", "AES Encryption", "Apache"],
+      image: Image9,
+      github: "https://github.com/tejHacks/plants-keeper",
       icon: <Lock className="w-6 h-6" />
     }
   ];
@@ -118,9 +185,9 @@ const Projects = () => {
             <Brain className="w-8 h-8 text-emerald-400 mr-4" />
             Machine Learning & AI Projects
           </h3>
-          
+
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-            {mlProjects.map((project, index) => (
+            {mlProjects.map((project) => (
               <div
                 key={project.title}
                 className={`bg-gradient-to-br ${getColorClasses(project.color)} backdrop-blur-sm rounded-2xl p-6 border hover:border-opacity-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl`}
@@ -134,9 +201,9 @@ const Projects = () => {
                     <h4 className="text-xl font-bold text-white">{project.title}</h4>
                   </div>
                 </div>
-                
+
                 <p className="text-slate-300 mb-4 leading-relaxed">{project.description}</p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.techStack.map((tech) => (
                     <span
@@ -147,9 +214,10 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex space-x-4">
                   <a
+                    
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -157,23 +225,23 @@ const Projects = () => {
                   >
                     <Github className="w-4 h-4" />
                     <span>Code</span>
-                  </a>  
+                  </a>
                   {project.liveDemo ? (
-  <a
-    href={project.liveDemo}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center space-x-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
-  >
-    <ExternalLink className="w-4 h-4" />
-    <span>Live Demo</span>
-  </a>
-) : (
-  <div className="flex items-center space-x-2 px-4 py-2 bg-slate-700 text-white rounded-lg opacity-60 cursor-not-allowed">
-    <ExternalLink className="w-4 h-4" />
-    <span>Live Link Not Available</span>
-  </div>
-)}
+                    <a
+                      href={project.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Live Demo</span>
+                    </a>
+                  ) : (
+                    <div className="flex items-center space-x-2 px-4 py-2 bg-slate-700 text-white rounded-lg opacity-60 cursor-not-allowed">
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Live Link Not Available</span>
+                    </div>
+                  )}
 
                 </div>
               </div>
@@ -183,82 +251,79 @@ const Projects = () => {
 
         {/* Web Projects Section */}
         <div>
-          <h3 className="text-3xl font-bold text-white mb-8 flex items-center">
-            <Globe className="w-8 h-8 text-blue-400 mr-4" />
-            Web Development Projects
-          </h3>
-          
-          <div className="space-y-12">
-            {webProjects.map((project, index) => (
-              <div
-                key={project.title}
-                className={`bg-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden hover:border-slate-600/50 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl ${
-                  index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                } flex flex-col lg:flex`}
-              >
-                {/* Image Section */}
-                <div className="lg:w-1/2">
+  <h3 className="text-3xl font-bold text-white mb-8 flex items-center">
+    <Globe className="w-8 h-8 text-blue-400 mr-4" />
+    Web Development Projects
+  </h3>
+
+  <div className="space-y-12">
+    {webProjects.map((project) => (
+      <div
+        key={project.title}
+        className="bg-slate-900/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden hover:border-slate-600/50 transition-all duration-300 transform hover:scale-[1.02] flex flex-col lg:flex-row"
+      >
+        {/* Image Section */}
+        <div className="lg:w-1/2">
                   <div className="aspect-video lg:aspect-square bg-slate-700 relative overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
-                  </div>
-                </div>
-
-                {/* Content Section */}
-                <div className="lg:w-1/2 p-8 lg:p-12 flex flex-col justify-center">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="p-2 bg-emerald-600/20 rounded-lg text-emerald-400">
-                      {project.icon}
-                    </div>
-                    <h4 className="text-2xl lg:text-3xl font-bold text-white">{project.title}</h4>
-                  </div>
-                  
-                  <p className="text-slate-300 mb-6 leading-relaxed text-lg">
-                    {project.description}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-2 mb-8">
-                    {project.techStack.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  
-                  <div className="flex space-x-4">
-                    {project.liveDemo && (
-                      <a
-                        href={project.liveDemo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg transition-colors transform hover:scale-105"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        <span>Live Demo</span>
-                      </a>
-                    )}
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-6 py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors transform hover:scale-105"
-                    >
-                      <Github className="w-4 h-4" />
-                      <span>View Code</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            ))}
+                    />   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
           </div>
         </div>
+
+        {/* Content Section */}
+        <div className="w-full lg:w-1/2 p-4 sm:p-6 lg:p-8 flex flex-col justify-center">
+          <div className="flex items-center space-x-3 mb-4">
+            <div className="p-2 bg-emerald-600/20 rounded-lg text-emerald-400">
+              {project.icon}
+            </div>
+            <h4 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white">{project.title}</h4>
+          </div>
+
+          <p className="text-slate-300 mb-6 leading-relaxed text-base sm:text-lg">
+            {project.description}
+          </p>
+
+          <div className="flex flex-wrap gap-2 mb-8">
+            {project.techStack.map((tech) => (
+              <span
+                key={tech}
+                className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          <div className="flex space-x-4">
+            {project.liveDemo && (
+              <a
+                href={project.liveDemo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg transition-colors transform hover:scale-105"
+              >
+                <ExternalLink className="w-4 h-4" />
+                <span>Live Demo</span>
+              </a>
+            )}
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 px-4 sm:px-6 py-2 sm:py-3 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors transform hover:scale-105"
+            >
+              <Github className="w-4 h-4" />
+              <span>View Code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
         {/* View More Projects */}
         <div className="text-center mt-16">
