@@ -1,5 +1,5 @@
 import {  FaLaughWink, } from 'react-icons/fa';
-import { ExternalLink,ComputerIcon, Github,SpeakerIcon,Smartphone, Brain, Stethoscope, Mic, Code, Palette, Timer, Calculator, Lock, Globe } from 'lucide-react';
+import { ExternalLink,ComputerIcon, Github,SpeakerIcon,Smartphone, Brain, Stethoscope,Book,Gamepad2Icon, Mic, Code, Palette, Timer, Calculator, Lock, Globe } from 'lucide-react';
 
 import Image1 from '../assets/mark-dart.jpg';
 import Image2 from '../assets/palindrome.png';
@@ -26,6 +26,7 @@ import Image20 from '../assets/color-pallete.png';  // For Color Palette Generat
 import Image21 from '../assets/nmap.png';  // For Nmap Commands Keeper
 import Image22 from '../assets/bible-game.jpg';  // For Nmap Commands Keeper
 import Image23 from '../assets/mobile-app.jpeg';  // For Nmap Commands Keeper
+import { FaLinux } from 'react-icons/fa6';
 
 
 const Projects = () => {
@@ -125,7 +126,7 @@ const Projects = () => {
       image: Image22,
       liveDemo: "https://bible-quiz-game-blombone.netlify.app/",
       github: "https://github.com/tejHacks/bible-game",
-      icon: <Code className="w-6 h-6" />
+      icon: <Gamepad2Icon className="w-6 h-6" />
     },
         {
     title: "Bible Verse Extension",
@@ -134,7 +135,7 @@ const Projects = () => {
     image: Image13,
     liveDemo: null,  // No live link for extensions; could add a demo video URL if you have one
     github: "https://github.com/tejHacks/random-bible-verse-extension",
-    icon: <Code className="w-6 h-6" />  // Using Code icon since it's dev-focused; swap to SpeakerIcon if you want audio vibes
+    icon: <Book className="w-6 h-6" />  // Using Code icon since it's dev-focused; swap to SpeakerIcon if you want audio vibes
   },
   {
     title: "Linux Commands Keeper",
@@ -143,7 +144,7 @@ const Projects = () => {
     image: Image14,
     liveDemo: null,
     github: "https://github.com/tejHacks/linux-commands-keeper",
-    icon: <ComputerIcon className="w-6 h-6" />
+    icon: <FaLinux className="w-6 h-6" />
   },
   {
     title: "Docker Commands Keeper",
