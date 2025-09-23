@@ -1,7 +1,6 @@
-
 import { Heart, Target, Download, Database, Server, Code2 } from 'lucide-react';
-// import PDF from '../assets/OLATEJU RESUME LATEST.pdf';
-import Image from '/teju.png';
+import ResumePDF from '../assets/OLATEJU RESUME LATEST.pdf'; // Renamed for clarity
+import ProfileImage from '../assets/teju.png'; // Fixed import, renamed to avoid conflict
 
 const About = () => {
     return (
@@ -60,8 +59,8 @@ const About = () => {
                         {/* Resume Download */}
                         <div className="text-center">
                             <a
-                                href="../assets/OLATEJU RESUME LATEST.pdf"
-                                download
+                                href={ResumePDF}
+                                download="Olateju_Resume.pdf"
                                 className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700 text-white rounded-xl font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-xl hover:shadow-emerald-500/25"
                             >
                                 <Download className="w-5 h-5 mr-3" />
@@ -77,7 +76,12 @@ const About = () => {
                             <div className="w-full max-w-md mx-auto">
                                 <div className="relative bg-gradient-to-br from-emerald-600/20 to-blue-600/20 rounded-3xl p-8 backdrop-blur-sm border border-slate-700/50">
                                     <div className="aspect-square bg-slate-700 rounded-2xl flex items-center justify-center">
-                                        <img src={Image} className="w-300 h-300 text-slate-500 border rounded" />
+                                        <img
+                                            src={ProfileImage}
+                                            alt="Olateju Olamide Emmanuel"
+                                            className="w-[300px] h-[300px] object-cover rounded"
+                                            onError={(e) => (e.currentTarget.src = '/assets/fallback.jpg')}
+                                        />
                                     </div>
                                     {/* Floating Icons */}
                                     <div className="absolute -top-4 -right-4 p-3 bg-emerald-600 rounded-xl animate-pulse">
