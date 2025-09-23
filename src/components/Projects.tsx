@@ -24,6 +24,7 @@ import Image18 from '../assets/bible-study.png';  // For Bible Study Notes
 import Image19 from '../assets/sniphub.png';  // For SnipHub
 import Image20 from '../assets/color-pallete.png';  // For Color Palette Generator
 import Image21 from '../assets/nmap.png';  // For Nmap Commands Keeper
+import Image22 from '../assets/bible-game.jpg';  // For Nmap Commands Keeper
 
 
 const Projects = () => {
@@ -106,6 +107,14 @@ const Projects = () => {
       image: Image1,
       liveDemo: "https://markdart-editor.vercel.app/",
       github: "https://github.com/tejHacks/markDartv1/",
+      icon: <Code className="w-6 h-6" />
+    },{
+      title: "Bible Quiz Adventure",
+      description: "Test your Bible knowledge and have fun learning God's Word!",
+      techStack: ["JavaScript", "React", "TypeScript", "Local Storage",],
+      image: Image22,
+      liveDemo: "https://bible-quiz-game-blombone.netlify.app/",
+      github: "https://github.com/tejHacks/bible-game",
       icon: <Code className="w-6 h-6" />
     },
         {
