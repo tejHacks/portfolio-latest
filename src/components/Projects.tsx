@@ -13,9 +13,22 @@ import Image9 from '../assets/plants-keeper.png';
 import Image10 from '../assets/cpp-camp-1.jpg';
 import Image11 from '../assets/lumicare.png';
 import Image12 from '../assets/mamacare.jpg';
+import Image13 from '../assets/bible.jpg';  // Download the screenshot from https://raw.githubusercontent.com/tejHacks/random-bible-verse-extension/main/bible.jpg and save it in src/assets/
+
+// Add these to your imports at the top
+import Image14 from '../assets/linux-keeper.png';  // Screenshot for Linux Commands Keeper
+import Image15 from '../assets/docker.png';  // For Docker Commands Keeper
+import Image16 from '../assets/library.png';  // For AUO Library
+import Image17 from '../assets/poem.png';  // For Poem Keeper
+import Image18 from '../assets/bible-study.png';  // For Bible Study Notes
+import Image19 from '../assets/sniphub.png';  // For SnipHub
+import Image20 from '../assets/color-pallete.png';  // For Color Palette Generator
+import Image21 from '../assets/nmap.png';  // For Nmap Commands Keeper
+
 
 const Projects = () => {
   const mlProjects = [
+
     {
       title: "Neonatal Jaundice Prediction",
       description: "Machine learning model deployed as a web app for early jaundice diagnosis. Built with Python and scikit-learn, hosted on Netlify for clinical accessibility.",
@@ -95,6 +108,87 @@ const Projects = () => {
       github: "https://github.com/tejHacks/markDartv1/",
       icon: <Code className="w-6 h-6" />
     },
+        {
+    title: "Bible Verse Extension",
+    description: "My first random Bible verse Chrome extension—replaces your new tab with inspiring daily Bible verses and Psalms for a quick spiritual boost. Simple, lightweight, and easy to install.",
+    techStack: ["JavaScript", "Chrome Extension API", "HTML5", "CSS3"],
+    image: Image13,
+    liveDemo: null,  // No live link for extensions; could add a demo video URL if you have one
+    github: "https://github.com/tejHacks/random-bible-verse-extension",
+    icon: <Code className="w-6 h-6" />  // Using Code icon since it's dev-focused; swap to SpeakerIcon if you want audio vibes
+  },
+  {
+    title: "Linux Commands Keeper",
+    description: "A compact PHP web app for storing, viewing, and organizing your favorite Linux commands—perfect for quick reference and CLI workflows.",
+    techStack: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+    image: Image14,
+    liveDemo: null,
+    github: "https://github.com/tejHacks/linux-commands-keeper",
+    icon: <ComputerIcon className="w-6 h-6" />
+  },
+  {
+    title: "Docker Commands Keeper",
+    description: "Another handy PHP-based commands keeper, this time focused on Docker—save, search, and manage container commands for smoother devops flows.",
+    techStack: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+    image: Image15,
+    liveDemo: null,
+    github: "https://github.com/tejHacks/docker-commands-keeper",
+    icon: <ComputerIcon className="w-6 h-6" />
+  },
+  {
+    title: "Nmap Commands Keeper",
+    description: "A PHP web tool for managing Nmap commands with copy-to-clipboard, dark mode, and secure execution previews—built for pentesting enthusiasts (execution safety in progress).",
+    techStack: ["PHP", "MySQL", "Bootstrap 5", "JavaScript"],
+    image: Image21,
+    liveDemo: null,
+    github: "https://github.com/tejHacks/nmap-commands-keeper",
+    icon: <Lock className="w-6 h-6" />
+  },
+  {
+    title: "AUO Library Management System",
+    description: "Full-featured PHP system for Achievers University library—handles student/lecturer registrations, book tracking, borrowing, searches, and reading plans to streamline workflows.",
+    techStack: ["PHP", "MySQL", "Bootstrap", "jQuery", "Ajax", "JavaScript"],
+    image: Image16,
+    liveDemo: null,
+    github: "https://github.com/tejHacks/auo-library",
+    icon: <Globe className="w-6 h-6" />
+  },
+  {
+    title: "Poem Keeper",
+    description: "A simple PHP app to store, edit, and reflect on your personal poems—your digital notebook for creative writing sessions.",
+    techStack: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+    image: Image17,
+    liveDemo: null,
+    github: "https://github.com/tejHacks/poem-keeper",
+    icon: <Palette className="w-6 h-6" />
+  },
+  {
+    title: "Bible Study Notes",
+    description: "Basic PHP app for tracking Bible study notes, with plans for favorites, memory verses, searches, and daily goals—keeping your spiritual journey organized.",
+    techStack: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
+    image: Image18,
+    liveDemo: null,
+    github: "https://github.com/tejHacks/bible-study-notes",
+    icon: <Code className="w-6 h-6" />
+  },
+  {
+    title: "SnipHub",
+    description: "Minimalist PHP code snippet manager with auth, CRUD ops, search, and a hacker-themed UI—toggle dark mode and store your snippets like a pro.",
+    techStack: ["PHP", "MySQL", "Bootstrap 5", "jQuery", "JavaScript"],
+    image: Image19,
+    liveDemo: null,
+    github: "https://github.com/tejHacks/snipHub",
+    icon: <Code className="w-6 h-6" />
+  },
+  {
+    title: "Color Palette Generator",
+    description: "Web-based JS tool for generating harmonious color palettes—pick hues, tweak schemes, and export for your design projects.",
+    techStack: ["JavaScript", "HTML5", "CSS3", "React"],
+    image: Image20,
+    liveDemo: "https://color-pallete-nine.vercel.app/",
+    github: "https://github.com/tejHacks/color-pallete-generator",
+    icon: <Palette className="w-6 h-6" />
+  },
     {
       title: "Palindrome Checker",
       description: "A sleek web application that checks if words or phrases are palindromes. Features real-time validation, case-insensitive checking, and handles spaces and punctuation gracefully. Built with clean JavaScript and responsive design.",
