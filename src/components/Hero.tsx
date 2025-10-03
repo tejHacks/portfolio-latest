@@ -1,14 +1,15 @@
-import { ArrowDown, Code, Coffee, Terminal } from 'lucide-react';
+import { ArrowDown, Code, Coffee, Terminal, } from 'lucide-react';
+import { FaLinux } from 'react-icons/fa';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 pt-20 pb-20">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-slate-900 pt-20 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="space-y-8 animate-fade-in">
           {/* Animated Icons */}
           <div className="flex justify-center space-x-6 mb-8">
             <div className="animate-bounce delay-100">
-              <Code className="w-8 h-8 text-emerald-400" />
+              <Code className="w-8 h-8 text-emerald-400"  />
             </div>
             <div className="animate-bounce delay-200">
               <Terminal className="w-8 h-8 text-blue-400" />
@@ -16,6 +17,10 @@ const Hero = () => {
             <div className="animate-bounce delay-300">
               <Coffee className="w-8 h-8 text-amber-400" />
             </div>
+            <div className="animate-bounce delay-300">
+              <FaLinux className="w-8 h-8 text-gray-200" />
+            </div>
+          
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
@@ -30,10 +35,10 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Software Engineer | Computer Scientist | Building the Future
+            Software Engineer | Computer Scientist | Technical Writer | Building the Future
           </p>
 
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             Crafting scalable systems with clean architecture, robust logic, and a passion for problem-solving.
           </p>
 
@@ -47,7 +52,7 @@ const Hero = () => {
             </a>
             <a
               href="#contact"
-              className="px-8 py-3 border border-slate-600 hover:border-emerald-400 text-slate-300 hover:text-emerald-400 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
+              className="px-8 py-3 bg-emerald-950 hover:border-emerald-400 hover:text-white rounded-lg font-medium transition-all duration-300 transform hover:translate-y-[-10px] hover:shadow-lg hover:shadow-emerald-950/5  "
             >
               Let's Connect
             </a>

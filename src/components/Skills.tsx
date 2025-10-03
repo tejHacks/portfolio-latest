@@ -21,11 +21,11 @@ const Skills = () => {
       icon: <Server className="w-6 h-6" />,
       color: "emerald",
       skills: [
+        { name: "Node.js", level: 75, icon: <FaNode className="text-green-400" /> },
+        { name: "REST APIs", level: 85, icon: <FaNetworkWired className="text-sky-400" /> },
         { name: "PHP", level: 90, icon: <FaPhp className="text-purple-400" /> },
         { name: "Laravel", level: 85, icon: <FaLaravel className="text-red-400" /> },
-        { name: "Node.js", level: 75, icon: <FaNode className="text-green-400" /> },
-        { name: "Python", level: 70, icon: <FaPython className="text-yellow-400" /> },
-        { name: "REST APIs", level: 85, icon: <FaNetworkWired className="text-sky-400" /> }
+        { name: "Python", level: 70, icon: <FaPython className="text-yellow-400" /> }
       
       ]
     },
@@ -34,10 +34,10 @@ const Skills = () => {
       icon: <Monitor className="w-6 h-6" />,
       color: "blue",
      skills: [
+       { name: "React", level: 75, icon: <FaReact className="text-cyan-400" /> },
         { name: "Vue.js", level: 80, icon: <SiVuedotjs className="text-green-400" /> },
-        { name: "React", level: 75, icon: <FaReact className="text-cyan-400" /> },
-        { name: "JavaScript", level: 85, icon: <SiJavascript className="text-yellow-400" /> },
         { name: "Tailwind CSS", level: 90, icon: <SiTailwindcss className="text-teal-400" /> },
+        { name: "JavaScript", level: 85, icon: <SiJavascript className="text-yellow-400" /> },
         { name: "HTML/CSS", level: 90, icon: <SiHtml5 className="text-orange-400" /> }
       ]
     },

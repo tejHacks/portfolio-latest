@@ -1,6 +1,6 @@
 import { Heart, Target, Download, Database, Server, Code2 } from 'lucide-react';
-import ResumePDF from '../assets/OLATEJU RESUME LATEST.pdf'; // Renamed for clarity
-import ProfileImage from '../assets/teju.png'; // Fixed import, renamed to avoid conflict
+import ResumePDF from '../assets/OLATEJU RESUME LATEST.pdf';
+import ProfileImage from '../assets/teju.png';
 
 const About = () => {
     return (
@@ -25,7 +25,7 @@ const About = () => {
 
                             <div className="space-y-4 text-slate-300 leading-relaxed">
                                 <p>
-                                    <strong className="text-emerald-400">Hey, I'm Olateju Olamide Emmanuel.</strong> I'm a Computer Science graduate and Software Engineer. I build scalable systems with a passion for clean architecture,beautiful and responsive UI and solid logic to solve real-world problems.
+                                    <strong className="text-emerald-400">Hey, I'm Olateju Olamide Emmanuel.</strong> I'm a Computer Science graduate and Software Engineer. I build scalable systems with a passion for clean architecture, beautiful and responsive UI, and solid logic to solve real-world problems.
                                 </p>
 
                                 <p>
@@ -40,7 +40,7 @@ const About = () => {
                         <div className="bg-slate-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50">
                             <div className="flex items-center space-x-4 mb-6">
                                 <div className="p-3 bg-blue-600/20 rounded-lg">
-                                    <Heart className="w-6 h-6 text-blue-400" />
+                                    <Heart className="w-6 h-6 text-red-400" />
                                 </div>
                                 <h3 className="text-2xl font-bold text-blue-400">Passion & Drive</h3>
                             </div>
@@ -51,7 +51,7 @@ const About = () => {
                                 </p>
 
                                 <p>
-                                    I learn by building, and when things break, I learn even faster. I am currently seeking <strong className="text-emerald-400">backend-focused software engineering opportunities</strong> where I can contribute meaningfully, grow alongside a great team, and continue creating software that makes a real impact.
+                                    I learn by building, and when things break, I learn even faster. I am currently seeking <strong className="text-emerald-400">frontend/fullstack focused software engineering opportunities</strong> where I can contribute meaningfully, grow alongside a great team, and continue creating software that makes a real impact.
                                 </p>
                             </div>
                         </div>
@@ -66,6 +66,9 @@ const About = () => {
                                 <Download className="w-5 h-5 mr-3" />
                                 Download My Resume
                             </a>
+                            <p className="text-slate-400 text-sm mt-4">
+                                Featuring my first React Native Linux Commands app, a 96% accurate AI model, and 20+ full-stack projects.
+                            </p>
                         </div>
                     </div>
 

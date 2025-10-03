@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Battery, Clock, MapPin, HardDrive, Home, User, Code, Briefcase, Mail, Menu } from 'lucide-react';
 
 const Navbar = () => {
   const [time, setTime] = useState(new Date());
   const [batteryLevel, setBatteryLevel] = useState(85);
   const [isCharging, setIsCharging] = useState(false);
-  const [ramUsage, setRamUsage] = useState('8GB');
+  const [ramUsage, setRamUsage] = useState('12GB');
   const [activeSection, setActiveSection] = useState('home');
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -86,7 +86,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Navigation - System Status */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-700/50">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md border-b border-slate-700/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-14">
             <div className="flex items-center gap-2">
@@ -101,16 +101,22 @@ const Navbar = () => {
             </div>
 
             {/* System Status */}
-            <div className="flex items-center flex-wrap justify-end gap-x-3 gap-y-1 sm:gap-x-6 text-[10px] sm:text-xs text-slate-300">
-              <div className="flex items-center space-x-1 sm:space-x-2">
+            <div className="flex items-center flex-wrap justify-end gap-x-2 gap-y-1 sm:gap-x-2 text-[10px] sm:text-xs text-slate-300">
+              <div className="flex items-center space-x-1 sm:space-x-1">
                 {getBatteryIcon()}
                 <span className="hidden sm:inline">{isCharging ? '⚡' : ''}</span>
                 <span>{batteryLevel}%</span>
               </div>
-              <div className="flex items-center space-x-1 sm:space-x-2">
+              <div className="flex items-center space-x-1 sm:space-x-1">
                 <Clock className="w-4 h-4 text-blue-400" />
                 <span className="hidden sm:inline">{formatTime(time)}</span>
                 <span className="sm:hidden">{time.toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit' })}</span>
+              </div>
+
+              <div className="flex items-center space-x-1 sm:space-x-2">
+                <HardDrive className="w-4 h-4 text-blue-400" />
+                <span className="hidden sm:inline">{ramUsage}</span>
+                <span className="sm:hidden">{ramUsage}</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-red-400" />

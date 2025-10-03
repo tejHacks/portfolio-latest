@@ -55,7 +55,7 @@ const Projects = () => {
     {
       title: "Speaker Diarization System",
       description: "Streamlit-based audio processing system to identify and separate different speakers in conversations. Combines PyTorch and audio signal processing.",
-      techStack: ["Python", "Streamlit", "librosa", "PyTorch", "scipy", "sklearn"],
+      techStack: ["Python", "Streamlit", "librosa", "PyTorch", "scipy", "Pydub","Ffmpeg","PyAnnote","Keras","", "sklearn"],
       icon: <Mic className="w-8 h-8" />,
       category: "Audio AI",
       liveDemo: null,
@@ -86,8 +86,8 @@ const Projects = () => {
     },
       {
       title: "MamaCare ",
-      description: "A multi functional web application designed to help pregnant mothers in the pregnancy stage with multiple features tailored towards aiding them(Pregnancy, tracker,",
-      techStack: ["JavaScript", "React", "TypeScript", "Local Storage","Node.js", "MYSQL","Fast API", "SwaggerUI","Tensorflow", "OpenCV", "Framer Motion", "Lucide React","Python","Sklearn", "Flask"],
+      description: "A multi functional web application designed to help pregnant mothers in the pregnancy stage with multiple features tailored towards aiding them(Pregnancy Tracker,BMI Calculator, Jaundice Checker, Skin disease checker, Pediatrician Finder, Grocery store and more.) ",
+      techStack: ["JavaScript", "React", "TypeScript", "Local Storage","Node.js", "MYSQL","Fast API", "SwaggerUI","Tensorflow", "OpenCV", "Framer Motion", "Lucide React","Python","Sklearn", "Flask","Express", "Numpy","Matplotlib", "Docker"],
       image: Image12,
       liveDemo: "https://lumicare-ai.netlify.app/",
       github: "https://github.com/tejHacks/jaundice-model-backend",
@@ -96,7 +96,7 @@ const Projects = () => {
     {
       title: "Linux Commands App",
       description: "My first mobile app—built with React Native to browse Linux commands with lazy loading, designed for developers learning CLI on Android.",
-      techStack: ["React Native", "JavaScript", "Expo"],
+      techStack: ["React Native","TypeScript","NativeWind", "JavaScript", "Expo"],
       image: Image23,
       liveDemo: null, // Could add Play Store link if published
       github: "https://github.com/tejHacks/linux-commands-mobile-app", // Update with actual repo if exists
