@@ -22,7 +22,7 @@ function App() {
       <footer className="bg-slate-900 border-t border-slate-700 py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-slate-400">
-            Built with <span className="text-red-400">❤️</span> and <span className="text-amber-400">☕</span> by{' '}
+            Built <span className="text-red-400">and </span>   <span className="text-amber-400">designed</span> by{' '}
             <span className="text-emerald-400 font-bold">tej{'{}'}</span>
           </p>
           <p className="text-slate-500 text-sm mt-2">

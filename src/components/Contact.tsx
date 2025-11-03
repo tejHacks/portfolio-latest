@@ -1,6 +1,4 @@
-import React from 'react';
 import { Mail, Github, Twitter, Linkedin, MessageCircle, ExternalLink, Send, Heart } from 'lucide-react';
-import { Analytics } from "@vercel/analytics/next";
 
 
 const Contact = () => {
