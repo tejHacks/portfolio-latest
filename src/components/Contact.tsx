@@ -73,13 +73,13 @@ const Contact = () => {
             Let's <span className="text-emerald-400">Connect</span>
           </h2>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto mb-4">
-            Ready to build something amazing together? I don't bite—unless you
+            Ready to build something amazing together? I don't bite;unless you
             write semicolons in Python 😤
           </p>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Whether you're looking for a backend developer, have a project idea,
-            or just want to chat about tech, I'm always excited to connect with
-            fellow developers and innovators.
+            Whether you're looking for a mobile/ frontend developer, have a
+            project idea, or just want to chat about tech, I'm always excited to
+            connect with fellow developers and innovators.
           </p>
         </div>
 
@@ -169,7 +169,7 @@ const Contact = () => {
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-3 px-6 py-3 bg-slate-900/50 backdrop-blur-sm rounded-full border border-slate-700/50">
             <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-slate-300">Based in Akure, Nigeria 🇳🇬</span>
+            <span className="text-slate-300">Based in Ibadan, Nigeria 🇳🇬</span>
             <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
           </div>
         </div>

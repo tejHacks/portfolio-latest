@@ -88,7 +88,7 @@ const Hero = () => {
               className="px-10 py-4 bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white rounded-xl font-bold transition-all duration-300 transform hover:scale-110 hover:shadow-2xl hover:shadow-emerald-500/50 flex items-center gap-2 group"
             >
               <span>Explore My Work</span>
-              <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
+              <ArrowDown className="w-5 pb-6 text-white h-5 group-hover:translate-y-1 transition-transform" />
             </a>
             <a
               href="#contact"
@@ -100,10 +100,10 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* Enhanced Scroll Indicator */}
+          {/* Enhanced Scroll Indicator
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-emerald-400/60 hover:text-emerald-400 transition-colors cursor-pointer">
             <ArrowDown className="w-8 h-8" />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

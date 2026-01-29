@@ -306,12 +306,12 @@ const Skills = () => {
                       <span className="text-slate-300 font-medium text-lg">
                         {skill.name}
                       </span>
-                      <div className="w-full bg-slate-700 rounded-full h-2.5 mt-1">
+                      {/* <div className="w-full bg-slate-700 rounded-full h-2.5 mt-1">
                         <div
                           className={`h-2.5 rounded-full bg-${category.color}-500`}
                           style={{ width: `${skill.level}%` }}
                         ></div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 ))}

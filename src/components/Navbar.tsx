@@ -14,7 +14,7 @@ import {
 
 const Navbar = () => {
   const [time, setTime] = useState(new Date());
-  const [batteryLevel, setBatteryLevel] = useState(85);
+  const [batteryLevel, setBatteryLevel] = useState(0);
   const [isCharging, setIsCharging] = useState(false);
   const [ramUsage, setRamUsage] = useState("12GB");
   const [activeSection, setActiveSection] = useState("home");
@@ -140,7 +140,7 @@ const Navbar = () => {
               </button>
               <div className="text-lg sm:text-xl md:text-2xl font-bold text-emerald-400 hover:text-emerald-300 transition-colors">
                 <a href="#home">
-                  tej<span className="text-amber-400">{"{}"}</span>
+                  TEJ<span className="text-amber-400">{"{}"}</span>
                 </a>
               </div>
             </div>
@@ -173,7 +173,7 @@ const Navbar = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4 text-red-400" />
-                <span>Akure, Nigeria 🇳🇬</span>
+                <span>Ibadan, Nigeria 🇳🇬</span>
               </div>
             </div>
           </div>

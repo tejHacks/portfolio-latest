@@ -1,4 +1,4 @@
-import { FaLaughWink } from "react-icons/fa";
+import { FaLaughWink, FaMobile } from "react-icons/fa";
 import {
   ExternalLink,
   ComputerIcon,
@@ -31,7 +31,7 @@ import Image16 from "../assets/library.png"; // For AUO Library
 import Image19 from "../assets/sniphub.png"; // For SnipHub
 import Image21 from "../assets/nmap.png"; // For Nmap Commands Keeper
 import Image22 from "../assets/bible-game.jpg"; // For Nmap Commands Keeper
-import Image23 from "../assets/mobile-app.jpeg"; // For Nmap Commands Keeper
+// import Image23 from "../assets/mobile-app.jpeg"; // For Nmap Commands Keeper
 import { FaLinux } from "react-icons/fa6";
 
 const Projects = () => {
@@ -173,22 +173,22 @@ const Projects = () => {
       github: "https://github.com/tejHacks/jaundice-model-backend",
       icon: <ComputerIcon className="w-6 h-6" />,
     },
-    {
-      title: "Linux Commands App",
-      description:
-        "My first mobile app—built with React Native to browse Linux commands with lazy loading, designed for developers learning CLI on Android.",
-      techStack: [
-        "React Native",
-        "TypeScript",
-        "NativeWind",
-        "JavaScript",
-        "Expo",
-      ],
-      image: Image23,
-      liveDemo: null, // Could add Play Store link if published
-      github: "https://github.com/tejHacks/linux-commands-mobile-app", // Update with actual repo if exists
-      icon: <Smartphone className="w-6 h-6" />,
-    },
+    // {
+    //   title: "Linux Commands App",
+    //   description:
+    //     "My first mobile app—built with React Native to browse Linux commands with lazy loading, designed for developers learning CLI on Android.",
+    //   techStack: [
+    //     "React Native",
+    //     "TypeScript",
+    //     "NativeWind",
+    //     "JavaScript",
+    //     "Expo",
+    //   ],
+    //   image: Image23,
+    //   liveDemo: null, // Could add Play Store link if published
+    //   github: "https://github.com/tejHacks/linux-commands-mobile-app", // Update with actual repo if exists
+    //   icon: <Smartphone className="w-6 h-6" />,
+    // },
     {
       title: "RizzMe",
       description: "A sleezy line generator for ri**ing your opposite gender",
@@ -312,6 +312,73 @@ const Projects = () => {
     },
   ];
 
+  const mobileProjects = [
+    {
+      title: "Linux Commands App",
+      description:
+        "Offline-first React Native app for browsing and learning Linux commands with lazy loading and fast search.",
+      stack: ["React Native", "TypeScript", "Expo", "NativeWind"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+    {
+      title: "Kairos",
+      description:
+        "Prayer reminder app for Christians, built around Jewish sacred hours with offline support.",
+      stack: ["React Native", "Expo", "Notifications"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+    {
+      title: "OyoKọpa",
+      description:
+        "CORPERS-focused mobile app for discovering places, services, and essentials in Oyo State.",
+      stack: ["React Native", "TypeScript"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+    {
+      title: "MamaCare (Mobile)",
+      description:
+        "Pregnancy companion app offering tracking, health tools, and maternal resources.",
+      stack: ["React Native", "Expo", "Firebase"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+    {
+      title: "Òdù Ilé",
+      description:
+        "Educational mobile app for learning Yorùbá history and cultural heritage.",
+      stack: ["React Native"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+    {
+      title: "Taska",
+      description:
+        "Minimal task management app focused on clarity, reminders, and productivity.",
+      stack: ["React Native"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+    {
+      title: "JaundX",
+      description:
+        "Mobile AI app for neonatal jaundice detection using computer vision models.",
+      stack: ["React Native", "Python", "TensorFlow", "OpenCV"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+    {
+      title: "SmoothSpeex",
+      description:
+        "ML-powered app for speaker separation and voice diarization.",
+      stack: ["Python", "PyTorch", "Audio Processing"],
+      category: "Mobile",
+      icon: <Smartphone className="w-8 h-8" />,
+    },
+  ];
+
   const getColorClasses = (color: string) => {
     const colors = {
       emerald: "from-emerald-600/20 to-emerald-800/20 border-emerald-500/30",
@@ -334,6 +401,79 @@ const Projects = () => {
           </p>
         </div>
 
+        {/* ML Projects Section */}
+        <div className="mb-20">
+          <h3 className="text-3xl font-bold text-white mb-8 flex items-center">
+            <FaMobile className="w-8 h-8 text-emerald-400 mr-4" />
+            Mobile Apps Projects
+          </h3>
+
+          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+            {mobileProjects.map((mobileProject) => (
+              <div
+                key={mobileProject.title}
+                className={`bg-gradient-to-br  backdrop-blur-sm rounded-2xl p-6 border hover:border-opacity-50 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl`}
+              >
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className={`p-3 rounded-xl bg-purple-600/20 text-400`}>
+                    {mobileProject.icon}
+                  </div>
+                  <div>
+                    <span className={`text-400 text-sm font-medium`}>
+                      {mobileProject.category}
+                    </span>
+                    <h4 className="text-xl font-bold text-white">
+                      {mobileProject.title}
+                    </h4>
+                  </div>
+                </div>
+
+                <p className="text-slate-300 mb-4 leading-relaxed">
+                  {mobileProject.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {mobileProject.stack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 bg-slate-700/50 text-slate-300 rounded-full text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+
+                {/* <div className="flex space-x-4">
+                  <a
+                    href={mobileProject.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
+                  >
+                    <Github className="w-4 h-4" />
+                    <span>Code</span>
+                  </a>
+                  {mobileProject.liveDemo ? (
+                    <a
+                      href={mobileProject.liveDemo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg transition-colors"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Live Demo</span>
+                    </a>
+                  ) : (
+                    <div className="flex items-center space-x-2 px-4 py-2 bg-slate-700 text-white rounded-lg opacity-60 cursor-not-allowed">
+                      <ExternalLink className="w-4 h-4" />
+                      <span>Live Link Not Available</span>
+                    </div>
+                  )}
+                </div> */}
+              </div>
+            ))}
+          </div>
+        </div>
         {/* ML Projects Section */}
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-white mb-8 flex items-center">
