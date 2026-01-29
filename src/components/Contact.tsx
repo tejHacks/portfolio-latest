@@ -135,7 +135,7 @@ const Contact = () => {
             <p className="text-slate-300 text-lg leading-relaxed mb-8">
               I'm currently open to{" "}
               <strong className="text-emerald-400">
-                backend development opportunities
+                full-stack and mobile development opportunities
               </strong>
               ,<strong className="text-blue-400"> internships</strong>, and{" "}
               <strong className="text-purple-400">

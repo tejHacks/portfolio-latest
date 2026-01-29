@@ -1,12 +1,14 @@
-# | Project Name                         | Tech Stack Ideas                            | Live/Backend |
-| ------------------------------------ | ------------------------------------------- | ------------ |
-| **Diabetes Patient Portal**          | Streamlit or Next.js + Flask/Node + MongoDB | 🔥 Yes       |
-| **Mental Health Chatbot (ML + NLP)** | Rasa/NLTK + Express + React                 | 🔥 Yes       |
-| **Disease Symptom Checker**          | ML + REST API + Tailwind React Frontend     | 🔥 Yes       |
-| **Health Risk Prediction API**       | Flask/FastAPI + JWT auth + Swagger UI       | 🔥 API       |
-| **Smart Diet Recommendation App**    | ML + React Native or Flutter UI             | 🔥 Mobile    |
+# | Project Name | Tech Stack Ideas | Live/Backend |
 
- # Backend Projects to Build in Node.js or Laravel
+| ------------------------------------ | ------------------------------------------- | ------------ |
+| **Diabetes Patient Portal** | Streamlit or Next.js + Flask/Node + MongoDB | 🔥 Yes |
+| **Mental Health Chatbot (ML + NLP)** | Rasa/NLTK + Express + React | 🔥 Yes |
+| **Disease Symptom Checker** | ML + REST API + Tailwind React Frontend | 🔥 Yes |
+| **Health Risk Prediction API** | Flask/FastAPI + JWT auth + Swagger UI | 🔥 API |
+| **Smart Diet Recommendation App** | ML + React Native or Flutter UI | 🔥 Mobile |
+
+# Backend Projects to Build in Node.js or Laravel
+
 Hospital Record Management System (with RBAC, APIs)
 
 School LMS with assignments, auth, and analytics
@@ -18,6 +20,7 @@ Job/Internship Tracker Portal (like remote OK clone)
 RESTful API for a fitness tracker mobile app
 
 ## Final Tej Plan (IMO)
+
 🧠 Deepen ML understanding with 3 new projects (health + NLP preferred).
 
 🛠️ Build 2 backend-heavy apps (Laravel + Node mix).
@@ -30,7 +33,7 @@ RESTful API for a fitness tracker mobile app
 
 📣 Start talking about your projects on LinkedIn, Dev.to, Twitter.
 
- # Solid ML/Data/AI projects, then 5 Backend + Fullstack combos, including that sexy Resume Revamper you just mentioned.
+# Solid ML/Data/AI projects, then 5 Backend + Fullstack combos, including that sexy Resume Revamper you just mentioned
 
 🔬 5 Realistic ML / AI Projects (2 months goal)
 These are practical, educational, and resume-worthy:
@@ -110,9 +113,9 @@ Notes, statuses, company info
 Resume upload
 Why: You’ll use it personally. Useful + fullstack practice.
 
-7. Online Course Platform (Mini Udemy Clone)
-Stack: Laravel + Vue
-Features:
+1. Online Course Platform (Mini Udemy Clone)
+   Stack: Laravel + Vue
+   Features:
 
 Course upload, user registration, progress tracking
 
@@ -121,9 +124,9 @@ Video support via Cloudinary or YouTube
 Payment integration (Paystack or Stripe sandbox)
 Why: Complex system = portfolio flex.
 
-8. Simple Inventory Management App
-Stack: Node.js + React + PostgreSQL
-Features:
+1. Simple Inventory Management App
+   Stack: Node.js + React + PostgreSQL
+   Features:
 
 Items, stock, orders
 
@@ -132,9 +135,9 @@ User roles (admin, staff)
 Charts for stock overview
 Why: Common enterprise problem. Showcases CRUD + RBAC + Charts.
 
-9. Blog CMS with Markdown & Image Upload
-Stack: Laravel + Vue / Node + React
-Features:
+1. Blog CMS with Markdown & Image Upload
+   Stack: Laravel + Vue / Node + React
+   Features:
 
 Rich text or Markdown support
 
@@ -143,9 +146,9 @@ Admin login + dashboard
 Post management + tagging
 Why: Backend admin panels are gold. Also good for internships.
 
-10. Secure Password Manager (Local or Online)
-Stack: Node.js + Vue + AES encryption
-Features:
+1. Secure Password Manager (Local or Online)
+   Stack: Node.js + Vue + AES encryption
+   Features:
 
 User auth
 
